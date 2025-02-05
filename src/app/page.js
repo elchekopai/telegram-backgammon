@@ -20,10 +20,10 @@ export default function Home() {
         setUser(telegram.initDataUnsafe.user);
       }
 
-      // ✅ Теперь явно используем tg, чтобы ESLint не ругался
-      console.log("Telegram WebApp API:", telegram);
-
-      // Используем API Telegram для установки темы
+      // ✅ Явное использование `tg`, чтобы ESLint не выдавал ошибку
+      telegram.showAlert("WebApp загружен в Telegram!");
+      
+      // Установка цвета фона в зависимости от темы Telegram
       document.body.style.backgroundColor = telegram.themeParams?.backgroundColor || "#ffffff";
     }
   }, []);
