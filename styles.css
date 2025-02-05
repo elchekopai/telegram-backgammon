@@ -1,0 +1,43 @@
+/* Стили для доски */
+.board {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    height: 200px;
+    background-color: #d5b185;
+    border: 2px solid #4e2d0b;
+    border-radius: 8px;
+  }
+  
+  /* Стили для сторон игроков */
+  .player-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Стили для фишек */
+  .chip {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  /* Стили для броска кубиков */
+  .dice-roll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Стили для кнопки */
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
